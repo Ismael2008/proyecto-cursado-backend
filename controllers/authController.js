@@ -22,7 +22,7 @@ const EMAIL_FROM_ADDRESS = process.env.EMAIL_FROM_ADDRESS; // Remitente
 const transporter = nodemailer.createTransport({
     host: EMAIL_SERVICE_HOST, 
     port: EMAIL_SERVICE_PORT, 
-    secure: true, 
+    secure: false, 
     auth: {
         user: EMAIL_SERVICE_USER,
         pass: EMAIL_SERVICE_PASS,
